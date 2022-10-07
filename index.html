@@ -45,13 +45,14 @@
             <div>
                 <h3>Video</h3>
                 <h2>Checklist for new employees onboarding</h2>
-                <!-- video content is different, for assignment only-->
+                <!-- video content is different-->
                 <video src="freevideo.mp4" controls alt = "video : checklist for new employees onboarding">
                 </video>
                 <cite>free videos, from https://www.videvo.net</cite>
             </div>
             <div>
                 <h3>Audio</h3>
+                <!-- audio content is different -->
                 <audio src="freeaudio.mp3" controls alt = "audio : tips for new employees podcast">
                 </audio>
                 <cite>free audio, from https://pixabay.com/</cite>
@@ -78,9 +79,55 @@
                 <li>Chung</li>
             </ul>
         </section>
+        <hr>
         <section>
-            <h2>section for form</h2>
-            <form></form>
+            <h2>Section for form</h2>
+            <form>
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" name="name">
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legned>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </fieldset>
+                <fieldset>
+                    <legend>Language Preference</legend>
+                    <input type="checkbox" name="preference">HTML
+                    <input type="checkbox" name="preference">CSS
+                    <input type="checkbox" name="preference">JavaScript
+                </fieldset>
+                <fieldset>
+                    <legend>Birthday</legend>
+                    <input type="date" name="birthday">
+                </fieldset>
+                <fieldset>
+                    <legend>Favorite fruit</legend>
+                    <input list="fruitslist" name="fruits">
+                    <datalist id="fruitslist">
+                        <option value="apple">
+                        <option value="banana">
+                        <option value="melon">
+                        <option value="grape">
+                        <option value="orange">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Academic year</legend>
+                    <select>
+                        <option>Freshman</option>
+                        <option>Sophomore</option>
+                        <option>Junior</option>
+                        <option>Senior</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Comment</legend>
+                    <textarea></textarea>
+                </fieldset>
+                <button>Submit!</button>
+            </form>
         </section>
     </main>
     <hr>
