@@ -1,11 +1,11 @@
 /* 
 note for grading
 1. General CSS
-    boxItem : each section
+    Color : rgb(for gray), hexcode (for lavendarblush), hsl (lavendar ish)
+    Background : applied each box and entire page
     Used Unit :
         relative units : em, %, vh ... etc (3 and more)
         absolute units : px, cm, in (vary,size for each titles, column gap respectively)
-    Color : rgb(for gray), hexcode (for lavendarblush), hsl (lavendar ish)
     Boxmodel : using short syntex for Tablet and desktop views, long syntex for mobile view
     Text : applied various
     Display: none(hide img on mobile view), block(making block for cite tag), in-lineblock(fit the size to each view for img)
@@ -23,7 +23,7 @@ note for grading
 2. CSS Selecter (may used more, but indicate only one)
     Class Selecter(.class) : .grid ...etc
     ID Selecter(#id) : #attend
-    Universal Selecter : applying font (line 36)
+    Universal Selecter : applying font (line 37)
     Element Selecter : body ...etc
     Attribute Selecter : a[href^= "#"], a[href^= "http"]
     Pseudo-class Selecter : a:hover .boxitem:hover optional animation as well
@@ -31,7 +31,6 @@ note for grading
     Combinators (descendant, child, general sibling, adjacent sibling, combining) : 
     ul .leader , .grid > .boxItem , audio + cite, video ~ cite, header.boxItem
 */
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
@@ -234,5 +233,3 @@ img, video {
         justify-content: space-around;
     }
 }
-
-
