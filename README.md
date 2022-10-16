@@ -1,4 +1,4 @@
-# Lab 3
+# Lab3
 
 Jongmin Kim
 A16566898

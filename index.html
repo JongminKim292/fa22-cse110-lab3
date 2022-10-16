@@ -1,3 +1,5 @@
+<!-- For grading comments : inline style is at line 32, 110 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,39 +15,43 @@
         <h1>New Employee Onboarding Meeting Minutes</h1>
         <nav>
             <ul>
-              <li>Meeting date, time, and location</li>
-              <li>Agenda</li>
-              <li>Required materials</li>
-              <li>Attendees list</li>
+              <li><a href = "#thisDate">Meeting date, time, and location</a></li>
+              <li><a href = "#Agenda">Agenda</a></li>
+              <li><a href = "#todo">Required materials</a></li>
+              <li><a href = "#attended">Attendees list</a></li>
+              <li><a href = "#nextDate">Next meeting</a></li>
+              <li><a href = "#labForm">Form(for lab)</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class = "grid">
             <section class = "boxItem">
+                <a name = "thisDate"></a>
                 <h2>Meeting date, time, and location</h2>
                 <h3>09:00, Aug, 11th, 2030</h3>
-                <i>at La jolla conference hall</i>
+                <i style="color: blueviolet;">at La jolla conference hall</i>
                 <p>meeting called by <strong>John</strong></p>
             </section>
             
             <section class = "boxItem">
+                <a name = "Agenda"></a>
                 <h2>Agenda</h2>
                 <span>How to be <em>successful</em> in this company</span>
-                <div id = "imgContains">
-                    <img src="meeting.png" alt = "image : meeting example" >
-                    <p>
-                        New employees require to read reading list, and watch the videos below. <br>
-                        Read and organize your opinions.
-                    </p>
-                </div>
+                <img src="meeting.png" alt = "image : meeting example" >
+                <p>
+                    New employees require to read reading list, and watch the videos below. <br>
+                    Read and organize your opinions.
+                </p>
             </section>
             
             <section class = "boxItem">
+                <a name = "todo"></a>
                 <h2>TODO Required materials</h2>
                 <div>
                     <h3>Video</h3>
-                    <h2>Checklist for new employees onboarding</h2>
+                    <h4>Checklist for new employees onboarding</h4>
+
                     <!-- video content is different-->
                     <video src="freevideo.mp4" controls>video : checklist for new employees onboarding"
                     </video>
@@ -72,10 +78,11 @@
             </section>
         
             <section class = "boxItem" id = "attend">
+                <a name="attended"></a>
                 <div>
                     <h2>Attendees list</h2>
-                    <ul id="flexUsing">
-                        <li>John</li>
+                    <ul id = "required">
+                        <li class = "leader">John</li>
                         <li>Kim</li>
                         <li>Su</li>
                         <li>Chung</li>
@@ -83,22 +90,42 @@
                 </div>
                 <div>
                     <h2>Attended</h2>
-                    <ul>
-                        <li>John</li>
+                    <ul id = "actual">
+                        <li class = "leader">John</li>
                         <li>Kim</li>
                         <li>Su</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Audience</h2>
+                    <ul id = "notRequired">
+                        <li>Danial</li>
+                        <li>David</li>
+                        <li>Min</li>
+                        <li>Aaron</li>
                     </ul>
                 </div>
             </section>
 
             <section class = "boxItem">
+                <a name="nextDate"></a>
                 <h2>Next meeting</h2>
                 <h3>09:00, Aug, 20th, 2030</h3>
-                <i>at La jolla conference hall</i>
+                <i style="color: blueviolet;">at La jolla conference hall</i>
                 <p>meeting called by <strong>John</strong></p>
+                <div>
+                    <h2>Attendees list</h2>
+                    <ul>
+                        <li class = "leader">John</li>
+                        <li>Kim</li>
+                        <li>Su</li>
+                        <li>Chung</li>
+                    </ul>
+                </div>
             </section>
 
-            <section class = "boxItem">
+            <section class = "boxItem" id = "formlab">
+                <a name="labForm"></a> 
                 <h2>Section for form</h2>
                 <form>
                     <fieldset>
@@ -149,7 +176,6 @@
             </section>
     </div>
     </main>
-    <hr>
     <footer>
         <i>2022 Fall CSE 110 Jongmin Kim</i>
     </footer>
