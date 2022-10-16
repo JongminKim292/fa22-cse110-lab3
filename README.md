@@ -1,4 +1,4 @@
-# Lab 2 - Starter
+# Lab3
 
 Jongmin Kim
 A16566898
