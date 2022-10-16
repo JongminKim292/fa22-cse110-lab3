@@ -1,11 +1,8 @@
-### Stand up meeting Template
-
-## Date DD/MM/YYYY
+# Stand up meeting Template
 
 ## Participant list
 
-
-
+### Date DD/MM/YYYY
 
 What did I work on yesterday?
 
