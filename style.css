@@ -8,23 +8,73 @@ boxItem : each section
     font-family: "Ubuntu", sans-serif
 }
 body {
-    background-color:lavenderblush
+    background-color:#FFF0F5;
 }
-/* Unit 3 unique(relative, absol) , background */
+
+h2, p{
+    font-size: 1.5em;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    display: block;
+    bottom: 1px;
+    background-color: #FFF0F5;
+    font-style: italic;
+    color: rgb(169,169,169);
+    text-align: center;
+    text-decoration:underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: white;
+}
+
+cite {
+    position: relative;
+    top: 5px;
+    display:block;
+    color:darkgray;
+}
+
+span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+img, video {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 /* in case mobile */
 @media (max-width: 1000px){
-    /* using 
-    [margin, padding, border long version], []
-    */
+    img {
+        display: none;
+    }
+
     .boxItem {
-        background-color: thistle;
+        background-color: hsl(300,24%,80%);
         padding-bottom:3%;
         padding-left:5%;
         padding-right:5%;
         padding-top:3%;
+        border-color: white;
         border-width: 1px;
         border-style: solid;
-        border-color: white;
         border-radius: 2rem;
         margin-top: 5%;
         margin-bottom: 5%;
@@ -51,7 +101,6 @@ body {
         grid-column-gap: 0.3in;
     }
     .grid > .boxItem  {
-        /* margin: 5vh auto 5vh auto; */
         width: 35vw;
         box-sizing: border-box;
     }
@@ -61,9 +110,9 @@ body {
     }
 
     .boxItem {
-        background-color: thistle;
+        background-color: hsl(300,24%,80%);
         padding: 3vh 5vw 3vh 5vw;
-        border: 1px solid white;
+        border: 1px solid, white;
         border-radius: 2rem;
         margin: 5vh auto 5vh auto;
         height: auto;
@@ -101,7 +150,7 @@ body {
     }
 
     .boxItem {
-        background-color: thistle;
+        background-color: hsl(300,24%,80%);
         padding: 3vh 3vw 3vh 3vw;
         border: 1px solid white;
         border-radius: 2rem;
