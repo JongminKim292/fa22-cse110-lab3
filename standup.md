@@ -4,9 +4,7 @@
 
 ### Date DD/MM/YYYY
 
-What did I work on yesterday?
-
-What am I working on today?
-
-What issuses are blocking me?
+1. What did I work on yesterday?
+2. What am I working on today?
+3. What issuses are blocking me?
 
