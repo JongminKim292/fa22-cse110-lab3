@@ -174,7 +174,7 @@ img, video {
     .boxItem {
         background-color: hsl(300,24%,80%);
         padding: 3vh 5vw 3vh 5vw;
-        border: 1px solid, white;
+        border: 1px solid white;
         border-radius: 2rem;
         margin: 5vh auto 5vh auto;
         height: auto;
