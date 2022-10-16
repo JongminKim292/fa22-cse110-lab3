@@ -1,5 +1,35 @@
 /* 
-boxItem : each section
+note for grading
+1. General CSS
+    boxItem : each section
+    Used Unit :
+        relative units : em, %, vh ... etc (3 and more)
+        absolute units : px, cm, in (vary,size for each titles, column gap respectively)
+    Color : rgb(for gray), hexcode (for lavendarblush), hsl (lavendar ish)
+    Boxmodel : using short syntex for Tablet and desktop views, long syntex for mobile view
+    Text : applied various
+    Display: none(hide img on mobile view), block(making block for cite tag), in-lineblock(fit the size to each view for img)
+    Sizing : applied various
+    position: relative for cite tag (make a gap from attached item), fixed for footer
+    Pseudo-class: each hyperlink (nav for inside of page, and todo readlist of external link) 
+    Layouts && Responsiveness: 
+        Responsiveness : using Grid to build media query design. 
+            For desktop : 3x2 boxs, for tablet : 2x3, for mobile : 1x6.
+                used attributes : grid-column-gap, grid-template-rows, grid-template-cols
+        Flexbox : using to sectionalize attendees(needed), attended(done meeting), audience(not attendee but join)
+            used attributes : flex-direction ,flex-wrap, justify-content
+    Font : using google font Ubuntu
+
+2. CSS Selecter (may used more, but indicate only one)
+    Class Selecter(.class) : .grid ...etc
+    ID Selecter(#id) : #attend
+    Universal Selecter : applying font (line 36)
+    Element Selecter : body ...etc
+    Attribute Selecter : a[href^= "#"], a[href^= "http"]
+    Pseudo-class Selecter : a:hover .boxitem:hover optional animation as well
+    Slector list : {h2, p} ... etc
+    Combinators (descendant, child, general sibling, adjacent sibling, combining) : 
+    ul .leader , .grid > .boxItem , audio + cite, video ~ cite, header.boxItem
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -26,7 +56,17 @@ footer {
     text-align: center;
     text-decoration:underline;
 }
-a {
+
+/*
+    selector for external link (with underline by default)
+*/
+a[href^= "http"] {
+    color: black;
+}
+/*
+    selector for current page nav (without any decoration from default)
+*/
+a[href^= "#"] {
     text-decoration: none;
     color: black;
 }
@@ -37,11 +77,33 @@ a:active {
     color: white;
 }
 
-cite {
+/* 
+    select one <cite> locating right next to video and share same parent element
+    in this case, parent : <section>(box for attending list)  
+*/
+video + cite {
     position: relative;
     top: 5px;
     display:block;
     color:darkgray;
+}
+
+/*
+    select every <cite> that is sibling with audio
+    in this case, parent : <section>(box for attending list)  
+*/
+audio ~ cite {
+    position: relative;
+    top: 5px;
+    display:block;
+    color:darkgray;
+}
+
+/*
+    leader (call the meeting) indicater on the list 
+*/
+ul .leader {
+    font-weight: bold;  
 }
 
 span {
@@ -105,6 +167,7 @@ img, video {
         box-sizing: border-box;
     }
     
+    /* boxitem && header */
     header.boxItem  {
         min-width: 18cm;
     }
@@ -128,10 +191,6 @@ img, video {
 }
 
 @media (min-width: 1600px){
-    /* using 
-    [margin, padding, border short version], [grid]
-    */
-
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -145,6 +204,7 @@ img, video {
         box-sizing: border-box;
     }
     
+    /* boxitem && header */
     header.boxItem  {
         min-width: 18cm;
     }
